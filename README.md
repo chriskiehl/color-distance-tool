@@ -5,3 +5,18 @@
 </p>
 
 A weirdly hyper-specific tool for selecting arbitrary colors from the screen and comparing them in various color spaces.
+
+
+## About 
+
+Foo
+
+### Installation
+
+
+```
+pip install git+https://github.com/chriskiehl/color-distance-tool.git
+```
+
+ 
+
