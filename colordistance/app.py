@@ -96,6 +96,7 @@ class Application(wx.Frame):
         self.SetIcon(self.icon)
         self.SetSize(500, 250)
         self.SetBackgroundColour(self.leftSwatch.GetBackgroundColour())
+        self.SetTitle("Color Distance Tool")
         sizer = wx.BoxSizer(wx.HORIZONTAL)
         sizer.Add(self.leftSwatch, wx.EXPAND)
         sizer.Add(self.rightSwatch, wx.EXPAND)
