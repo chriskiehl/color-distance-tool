@@ -2,7 +2,7 @@ import math
 from colormath.color_conversions import convert_color
 from colormath.color_objects import sRGBColor, LabColor, HSLColor, HSVColor
 
-from util import assoc, associn
+from colordistance.util import assoc, associn
 
 
 def colorspaces(swatchInfo):

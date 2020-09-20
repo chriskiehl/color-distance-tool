@@ -2,10 +2,10 @@ import wx
 import wx.lib.mixins.inspection
 from pynput import mouse
 
-import core
-import screen
-from components import ColorSelector, DifferenceLine
-from util import assoc
+import colordistance.core as core
+import colordistance.screen as screen
+from colordistance.components import ColorSelector, DifferenceLine
+from colordistance.util import assoc
 
 
 class Application(wx.Frame):

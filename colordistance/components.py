@@ -1,6 +1,6 @@
 import wx
 import wx.lib.mixins.inspection
-from util import fix
+from colordistance.util import fix
 
 class ColorSwatch(wx.Panel):
     """
