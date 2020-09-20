@@ -104,9 +104,13 @@ class Application(wx.Frame):
         self.SetSizer(v)
 
 
-
-if __name__ == '__main__':
+def run():
     app = wx.App(False)
     frame = Application(None)
     frame.Show(True)
     app.MainLoop()
+
+
+
+if __name__ == '__main__':
+    run()
