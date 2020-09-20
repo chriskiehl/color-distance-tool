@@ -2,6 +2,10 @@ import wx
 import wx.lib.mixins.inspection
 from pynput import mouse
 
+import sys
+
+import os
+
 import colordistance.core as core
 import colordistance.screen as screen
 from colordistance.components import ColorSelector, DifferenceLine
@@ -30,7 +34,8 @@ class Application(wx.Frame):
         self.leftSwatch = ColorSelector(self, id='left', onClick=self.onStartColorSelection)
         self.rightSwatch = ColorSelector(self, id='right', onClick=self.onStartColorSelection)
         self.difference = DifferenceLine(self)
-        self.icon = wx.Icon('icon.PNG', wx.BITMAP_TYPE_PNG)
+        path = os.path.join(os.path.dirname(__file__), 'icon.PNG')
+        self.icon = wx.Icon(path, wx.BITMAP_TYPE_PNG)
 
         self.layout()
         self.updateState(self.state)
